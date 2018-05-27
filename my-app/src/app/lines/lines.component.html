@@ -2,5 +2,7 @@
   <a routerLink="/">Go back</a>
 </nav>
 <router-outlet></router-outlet>
-<p>{{ line.name | uppercase }}</p>
-<p>{{ line.direction }}</p>
+<div *ngFor="let line of lines;">
+  <p>{{ line.name | uppercase }}</p>
+  <p>{{ line.direction }}</p>
+</div>
